@@ -38,7 +38,7 @@ View a list of saved storm entries.
 
 Can see all the entries saved locally 
 
-<br/>
+
 Tech Stack
 React Native with Expo
 
@@ -54,12 +54,12 @@ expo-image-picker and expo-location for camera and GPS access
 
 OpenWeatherMap API for live weather data
 
-<br/>
+
 UI Highlights
 Modern, clean interface with a background image on the Storm screen and simple background on main Home screen 
 Styled inputs, buttons, and storm entry cards.
 
-<br/>
+
 Installation:
 
 git clone https://github.com/your-username/weather-app-expo.git
@@ -84,8 +84,6 @@ Project Structure
   └── asyncStorage.js
 App.js
 
-
-<br/>
 Permissions Required:
 Location Access
 Camera: To capture storm images
