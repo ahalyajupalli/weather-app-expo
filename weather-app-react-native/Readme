@@ -1,1 +1,95 @@
 
+StormTracker is a React Native mobile application that helps users:
+
+1. Search and view 7-day weather forecasts (including wind speed and temperature).
+
+2. Document storm events with photos, storm type, notes, location, and date.
+
+3.Save storm reports locally on their device for later reference.
+
+
+Features:
+
+Search for a city or location.
+
+Navigate to the weather forecast or storm documentation.
+
+1.Home Screen:
+Displays daily temperature, weather conditions, and wind speed.
+
+Search for a city or location using Search button
+
+Shows a 7-day weather forecast for the selected location.
+
+2.Storm Documentation Screen
+Capture and upload storm images using the camera.
+
+Enter notes and select storm type from a dropdown.
+
+Automatically fetch and display the current location.
+
+Choose the storm date using a date picker.
+
+Save the entry locally on the device using AsyncStorage.
+
+View a list of saved storm entries.
+
+3.SavedEntries screen:
+
+Can see all the entries saved locally 
+
+<br/>
+Tech Stack
+React Native with Expo
+
+React Navigation for multi-screen routing
+
+AsyncStorage for local storage
+
+@react-native-picker/picker for dropdowns
+
+@react-native-community/datetimepicker for date selection
+
+expo-image-picker and expo-location for camera and GPS access
+
+OpenWeatherMap API for live weather data
+
+<br/>
+UI Highlights
+Modern, clean interface with a background image on the Storm screen and simple background on main Home screen 
+Styled inputs, buttons, and storm entry cards.
+
+<br/>
+Installation:
+
+git clone https://github.com/your-username/weather-app-expo.git
+cd weather-app-react-native
+npm install
+npx expo start
+Make sure you have the Expo CLI installed globally:
+npm install -g expo-cli
+
+
+
+Project Structure
+/assets
+  └── images/         # Images required
+/screens
+  ├── HomeScreen.js    // Main screen
+  ├── SavedEntries.js     // to check saved strom Entries
+  └── StormDocumentationScreen.js // to captures stroms and save data locally
+/Navigation
+  └── appNavigation.js
+/utils
+  └── asyncStorage.js
+App.js
+
+
+<br/>
+Permissions Required:
+Location Access
+Camera: To capture storm images
+Gallery: to choose from previous images
+
+Author
+Ahalya Jupalli
